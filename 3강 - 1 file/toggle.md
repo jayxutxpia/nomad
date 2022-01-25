@@ -1,4 +1,4 @@
-# #3.7 CSS in JavaScript - part 2-3
+# 📌 #3.7 CSS in JavaScript - part 2-3
 ###### 일자: 22/01/23  │  작성일: 22/01/24
 &nbsp;
 
