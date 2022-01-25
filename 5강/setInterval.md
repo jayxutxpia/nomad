@@ -14,7 +14,6 @@ function getClock() {
   clock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 }
 
-getClock();
 setInterval(getClock, 1000);
 ```
 
@@ -46,9 +45,23 @@ setInterval(getClock, 1000);
 
 &nbsp;
 
-✔ 두 함수 모두 지정한 시간 이후부터 function을 실행한다.   
+✔ 두 함수 모두 지정한 시간 이후부터 function을 실행하게 된다.   
 ✔ 따라서 현재의 시·분·초까지 출력하기 위해서는 getClock() 함수를 사전에 먼저 호출해 줘야 한다.
 
+
+```java
+// <h2 id="clock">00:00:00</h2>
+
+const clock = document.querySelector("#clock");
+
+function getClock() {
+  const date = new Date();
+  clock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+}
+
+getClock();
+setInterval(getClock, 1000);
+```
 #
 
 &nbsp;
