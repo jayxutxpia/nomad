@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./src/style.css" rel="stylesheet" />
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+      <h1 id="title">Random Number Game</h1>
+      <div id="sub-title">Generate a number</div>
+      <div id="main">
+        <section id="left">
+        <div id="generate-number" class="section">
+          <form id="form-generate">
+          <label for="name">Between 0 and </label>
+          <input type="number" id="input-generate"  />
+          <div id="button">
+            <button id="button-generate">Generate</button>
+          </div>
+          
+        <div id="alert-warning" class="hidden">⛔ Please fill in the blank!!</div>
+        <div id="alert-reset" class="hidden">❌ Negative values are restricted</div>
+        <div id="alert-higher" class="hidden">🔔 Please choose a number higher than 0</div>
+        </form>
+      </div>
+    </section>
+    <section id="center">
+      <div id="set-number">0 ~ ?</div>
+      <div id="result" class="hidden"></div>
+
+    </section>
+    <section id="right">
+      <div id="guess-number" class="section">
+        <form id="form-guess">
+          <label for="name">Guess the number: </label>
+          <input type="number" id="input-guess" required />
+          <div id="button">
+            <button id="button-play">Play!</button>
+          </form>
+        </div></section>
+      </div>
+      <button id="restart">restart</button>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="https://twemoji.maxcdn.com/v/13.1.0/twemoji.min.js"></script>
+    <script>
+      twemoji.parse(document.body);
+    </script>
+  </body>
+</html>
